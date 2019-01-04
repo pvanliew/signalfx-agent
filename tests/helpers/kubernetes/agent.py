@@ -3,7 +3,7 @@ from functools import partial as p
 
 import yaml
 
-from helpers.kubernetes.utils import (
+from tests.helpers.kubernetes.utils import (
     create_clusterrole,
     create_clusterrolebinding,
     create_configmap,
@@ -22,7 +22,7 @@ from helpers.kubernetes.utils import (
     has_secret,
     has_serviceaccount,
 )
-from helpers.util import wait_for
+from tests.helpers.util import wait_for
 
 
 class Agent:  # pylint: disable=too-many-instance-attributes
